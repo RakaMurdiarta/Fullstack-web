@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <style>
+        #image{
+            margin-top: 20px;
+            width: 700px; 
+            height: 600px; 
+            /* border: 1px solid red; */
+            background-image: url('https://img.freepik.com/free-photo/red-black-brush-stroke-banner-background-perfect-canva_1361-3597.jpg?size=626&ext=jpg&ga=GA1.1.677664868.1671626147&semt=sph');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        section{
+            
+            display: flex;
+            height: 600px; 
+            /* border: 1px solid rebeccapurple; */
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            padding-left: 40px;
+        }
+        .icon{
+            height: 70px;
+            width: 70px;
+            padding: 5px;
+         
+        }
+    </style>
+</head>
+<body>
+    <div style="border: 1px solid green;">
+        <ol>
+            <li>Item 1</li>
+                <ol type="A">
+                    <li>Sub Item a</li>
+                    <li>Sub Item b</li>
+                </ol>
+            <li>Item 2</li>
+            <ol type="a">
+                <li>a</li>
+                <li>etc</li>
+            </ol>
+        </ol>
+        <!-- --------- -->
+        <ol type="I">
+            <li>Item 1</li>
+            <ul>
+                <li>sub item</li>
+                <li>sub item</li>
+            </ul>
+            <li>Item 2</li>
+            <ul type="square">
+                <li>etc</li>
+                <li>etc</li>
+            </ul>
+        </ol>
+    </div>
+    <div id="image">
+        <section>
+            <img class="icon" src="https://cdn-icons-png.flaticon.com/128/3046/3046121.png">
+            <img class="icon" src="https://cdn-icons-png.flaticon.com/128/3670/3670051.png">
+            <img class="icon" src="https://cdn-icons-png.flaticon.com/128/2111/2111514.png">
+            <img class="icon" src="https://cdn-icons-png.flaticon.com/128/281/281764.png">
+        </section>
+    </div>
+</body>
+</html>
