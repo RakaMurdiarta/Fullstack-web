@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+body{
+    background-color: cornsilk;
+    font-family: "Montserrat";
+}
+
+.judul{
+    /* border: 1px solid black; */
+    text-align: center;
+    /* color: brown; */
+}
+.img{
+   text-align: center;
+}
+.img img {
+    width: 550px;
+    height: 380px;
+}
+.isi a{
+    color: red;
+    text-underline-offset: 4px;
+    font-size: 13px;
+}
+.isi p{
+    font-size: 13px;
+    text-align: justify;
+}
+.isi ol{
+    font-size: 13px;
+}
+.isi{
+    font-weight: 500;
+}
