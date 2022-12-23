@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment Div and Span</title>
+    <style>
+        body{
+            background-color: grey;
+        }
+      .p-div {
+        background-color: blue;
+        color: white;
+      }
+
+      .wadah {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding: 5px;
+        /* border: 1px solid black; */
+        width: 400px;
+        height: auto;
+      }
+      .icon {
+        /* display: flex; */
+        height: 30px;
+        margin: 2px;
+      }
+      .wadah2{
+        display: flex;
+        flex-wrap: wrap;
+        /* border: 1px solid black; */
+        background-color:white;
+        margin-top: 20px;
+        width: 410px;
+        height: auto;
+      }
+      .icon2{
+        height: 25px;
+        width: 75px;
+        margin: 3px;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="p-div">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis,
+          amet?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+          voluptatibus delectus debitis magnam, facere enim alias corrupti
+          aspernatur obcaecati doloremque.
+        </p>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+    </section>
+    <!-- <section class="task2"> -->
+    <div class="wadah">
+      <div class="icon" style="background-color: red"></div>
+      <div class="icon" style="background-color: orange"></div>
+      <div class="icon" style="background-color: yellow"></div>
+      <div class="icon" style="background-color: green"></div>
+      <div class="icon" style="background-color: blue"></div>
+      <div class="icon" style="background-color: pink"></div>
+      <div class="icon" style="background-color: violet"></div>
+    </div>
+    <!-- </section> -->
+    <section>
+      <div class="wadah2">
+        <span class ="icon2" style="background-color: red"></span>
+        <span class ="icon2" style="background-color: orange"></span>
+        <span class ="icon2" style="background-color: yellow"></span>
+        <span class ="icon2" style="background-color: green"></span>
+        <span class ="icon2" style="background-color: blue"></span><br>
+        <span class ="icon2" style="background-color: pink"></span><br>
+        <span class ="icon2" style="background-color: violet"></span>
+      </div>
+    </section>
+  </body>
+</html>
