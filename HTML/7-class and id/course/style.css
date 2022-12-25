@@ -10,3 +10,16 @@
   margin: 20px;
   padding: 20px;
 }
+.note {
+  font-size: 120%;
+  color: red;
+}
+
+#myheader {
+  background-color: aqua;
+  padding: 40px;
+  margin: 20px;
+  color: black;
+  text-align: center;
+  border: 1px dashed red;
+}
