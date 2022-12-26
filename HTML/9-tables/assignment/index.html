@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+    <style>
+      .wrapper {
+        display: inline-block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      thead {
+        color: white;
+        background-color: grey;
+      }
+      th {
+        width: 200px;
+      }
+      .table2 {
+        font-family: mo;
+      }
+      .table2 th {
+        background-color: green;
+        width: auto;
+      }
+      .table2 img {
+        width: 100%;
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <table border="1">
+        <thead>
+          <th>Nama</th>
+          <th>Tinggi</th>
+          <th>Umur</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Koko</td>
+            <td>150cm</td>
+            <td>20 tahun</td>
+          </tr>
+          <tr>
+            <td>Jaka</td>
+            <td>164cm</td>
+            <td>23 tahun</td>
+          </tr>
+          <tr>
+            <td>Rini</td>
+            <td>158cm</td>
+            <td>17 tahun</td>
+          </tr>
+          <tr>
+            <td>Doni</td>
+            <td>151cm</td>
+            <td>15 tahun</td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <table border="1" class="table2">
+        <thead>
+          <th>Data Diri</th>
+          <th>Keterangan</th>
+          <th>Foto</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Nama</td>
+            <td>Aldi Alamari</td>
+            <td rowspan="10">
+              <img
+                src="https://images.pexels.com/photos/2050979/pexels-photo-2050979.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt=""
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Asal Sekolah</td>
+            <td>SMKN 1 LMBOTO</td>
+          </tr>
+          <tr>
+            <td>Tempat Tgl Lahir</td>
+            <td>Limboto, 16 November 2003</td>
+          </tr>
+          <tr>
+            <td>Jurusan</td>
+            <td>Multimedia (MM)</td>
+          </tr>
+          <tr>
+            <td>Jenis Kelamin</td>
+            <td>Laki-laki</td>
+          </tr>
+          <tr>
+            <td>Kewarnganegaraan</td>
+            <td>Indonesia</td>
+          </tr>
+          <tr>
+            <td>Status</td>
+            <td>Pelejar</td>
+          </tr>
+          <tr>
+            <td>Alamat</td>
+            <td>Jl. Hasan Dangkua, Kel. Kayumerah, Kec. Limboto</td>
+          </tr>
+          <tr>
+            <td>Kelainan Khusus</td>
+            <td>Tidak Ada</td>
+          </tr>
+          <tr>
+            <td>Hobi & Bakat</td>
+            <td>Dokumenter Video & Web Design</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

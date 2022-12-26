@@ -1,0 +1,14 @@
+body {
+    padding: 0;
+    margin: 0;
+    
+  }
+.bg{
+    height: 500px;
+    width: auto;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(223, 66, 66, 0.7)),url("https://images.pexels.com/photos/547114/pexels-photo-547114.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
