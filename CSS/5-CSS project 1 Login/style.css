@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+  background-image: url("https://images.pexels.com/photos/2457278/pexels-photo-2457278.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+.bg {
+  height: 692px;
+  display: grid;
+  place-items: center;
+  /* text-align: center; */
+  /* border: 1px solid red; */
+}
+.content {
+  width: 410px;
+  height: 500px;
+  /* border: 1px solid white; */
+  box-shadow: 12px 12px 12px 12px;
+  border-radius: 20px;
+}
+.lg-img {
+  /* padding: 20px; */
+  height: 50%;
+  /* border: 1px solid white;    */
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-size: cover;
+  position: relative;
+  /* background-color: grey; */
+  /* margin: 2px; */
+  background-image: url("https://images.pexels.com/photos/2457278/pexels-photo-2457278.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+.lg-img h4 {
+  font-size: 25px;
+  padding: 90px 0 0 40px;
+  margin: 0;
+  color: white;
+  font-weight: 700;
+}
+.lg-img p {
+  padding: 5px 70px 0 40px;
+  font-size: 12px;
+  color: white;
+  margin: 0;
+}
+.lg-img a {
+  /* float: right; */
+  bottom: 0;
+  position: absolute;
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-bottom: 12px;
+  font-size: 13px;
+}
+
+.lg-input {
+  height: 50%;
+  text-align: center;
+  background-color: white;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.lg-input p {
+  margin: 0;
+  padding-top: 25px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.btn input[type="text"],
+input[type="password"] {
+  margin: 5px;
+  padding: 5px;
+  width: 250px;
+  padding-left: 29px;
+}
+
+.btn {
+  position: relative;
+}
+.btn .fa-user {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 11px;
+  left: 70px;
+}
+.btn .fa-lock {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 51px;
+  left: 70px;
+}
+.btn i {
+  color: grey;
+  opacity: 0.4;
+}
+.lupapass .ingat {
+  /* padding-right: 15px; */
+  font-size: 12px;
+  padding-right: 50px;
+}
+.lupapass {
+  margin-top: 8px;
+  /* margin-left: 20px; */
+}
+.lupapass .forget {
+  padding-left: 37px;
+  font-size: 12px;
+}
+.btn-submit {
+  margin-top: 30px;
+}
+.btn-submit button {
+  padding: 5px;
+  width: 100px;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  background-color: crimson;
+}

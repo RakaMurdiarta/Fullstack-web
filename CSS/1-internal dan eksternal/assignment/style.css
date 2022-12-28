@@ -1,0 +1,30 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  /* border: 1px solid black;/ */
+  display: grid;
+  place-items: center;
+  color: white;
+
+  /* display: inline; */
+  /* padding: 20px; */
+}
+.box .red {
+  background-color: red;
+}
+.box .yellow {
+  background-color: rgba(255, 251, 0, 0.986);
+}
+.box .green {
+  background-color: green;
+}
+.box .blue {
+  background-color: blue;
+}
+div {
+  padding: -30px;
+}

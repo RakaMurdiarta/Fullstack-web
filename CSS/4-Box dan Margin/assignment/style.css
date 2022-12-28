@@ -1,0 +1,36 @@
+.container {
+  display: grid;
+  place-items: center;
+  border: 1px solid;
+}
+.parent {
+  width: 150px;
+  height: 98px;
+  text-align: center;
+  margin: 2px;
+}
+.parent p {
+  font-size: 9px;
+  margin-top: 5px;
+  /* margin: 0; */
+  color: white;
+}
+
+.isi {
+  border: 1px solid salmon;
+  margin-top: 13px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+.child1 {
+  width: 80%;
+  height: 15px;
+  margin-top: 9px;
+  /* margin-left: 7px; */
+  background-color: green;
+}
+.child1 p {
+  display: grid;
+  place-items: center;
+}
