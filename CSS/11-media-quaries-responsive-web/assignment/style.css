@@ -34,6 +34,7 @@ h2 {
 @media screen and (max-width: 1414px) {
   .container {
     flex-wrap: wrap;
+    /* justify-content: space-around; */
     /* flex: 1; */
   }
   .img {
