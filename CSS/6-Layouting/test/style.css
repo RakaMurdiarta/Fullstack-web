@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: #633b79;
+}
+
+.content {
+  width: 1240px;
+  max-width: 92%;
+  margin: 0 auto;
+  /* border: 1px solid firebrick; */
+}
+.main {
+  width: 100%;
+  height: 165vh;
+  position: relative;
+  background-color: #633b79;
+  /* border: 1px solid firebrick; */
+}
+.main header {
+  width: 100%;
+  height: 15vh;
+  /* border: 1px solid firebrick; */
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 30%;
+}
+.logo h2 {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #efd73a;
+  font-style: italic;
+  /* border: 1px solid firebrick; */
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid firebrick; */
+  width: 70%;
+}
+.menu ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  font-size: 23px;
+  color: white;
+  display: inline-block;
+}
+.cool::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width 0.3s;
+}
+
+.cool:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+.search {
+  width: 300px;
+  text-align: center;
+  position: relative;
+}
+.search input {
+  padding: 8px;
+  width: 95%;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  /* background: transparent; */
+}
+i {
+  position: absolute;
+  right: 20px;
+  font-size: 20px;
+  right: 20px;
+  top: 8px;
+  color: #ccc;
+  opacity: 0.7;
+}
+.left {
+  float: left;
+  width: 65%;
+  /* border: 1px solid red; */
+}
+.left h2 {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: black;
+  padding-bottom: 12px;
+}
+.left .img {
+  width: 100%;
+  padding: 100px;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://img.freepik.com/premium-photo/table-breaking-news-banner-background-news-studio_327072-644.jpg?w=826");
+}
+.left p {
+  font-size: 18px;
+  padding-top: 12px;
+}
+.news {
+  margin: 10px;
+  /* background-color: aliceblue; */
+  background-color: #ccc;
+  padding: 20px;
+  border-radius: 20px;
+}
+.right {
+  float: left;
+  width: 35%;
+  /* border: 1px solid red; */
+}
+.right h2 {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: black;
+  padding-bottom: 12px;
+}
+.right .img {
+  width: 100%;
+  /* padding: 100px; */
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://img.freepik.com/free-photo/funny-young-woman-poses-with-soucepan-head_176420-8432.jpg?w=740&t=st=1672400266~exp=1672400866~hmac=a497f7fe1ff1e63d932e1e6ebbf64201001b2887866badd4b4bd43c80ea4b864");
+}
+.right p {
+  font-size: 18px;
+  padding-top: 12px;
+}
+article ::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.footer {
+  margin-top: 30px;
+}
+.footer-text {
+  text-align: center;
+  padding: 50px;
+  background-color: #ccc;
+  font-size: 13px;
+  /* width: 100%; */
+}
