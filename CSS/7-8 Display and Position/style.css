@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Poppins:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.hero-top {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.938);
+  position: fixed;
+}
+section {
+  max-width: 90%;
+  margin: 0 auto;
+  background-color: rgb(222, 190, 13);
+}
+header {
+  /* height: 15vh; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  display: flex;
+}
+.logo img {
+  width: 230px;
+  height: 110px;
+  padding: 20px;
+  /* background-color: rgb(153, 51, 59); */
+}
+nav ul li {
+  display: inline;
+  margin-right: 90px;
+  /* ; */
+}
+nav ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 20px;
+  display: inline-block;
+}
+.course {
+  display: inline-block;
+  position: relative;
+  /* border: 1px solid red; */
+}
+.dropdown {
+  display: none;
+  margin-top: 3px;
+  position: absolute;
+  width: 138px;
+  /* height: 150px; */
+  background-color: rgb(175, 162, 162);
+  border-radius: 10px;
+  z-index: 1;
+}
+.dropdown .menu-d li {
+  display: block;
+  padding: 18px 0px 18px 10px;
+  /* font-size: 12px; */
+}
+
+.dropdown .menu-d li a {
+  font-size: 18px;
+  color: black;
+}
+.course a:hover {
+  color: rgb(255, 255, 255);
+  transition: 0.2s;
+  /* font-weight: 700; */
+}
+.course:hover .dropdown {
+  display: block;
+  /* transition: 1s; */
+}
+.course .cool {
+  font-weight: 700;
+}
