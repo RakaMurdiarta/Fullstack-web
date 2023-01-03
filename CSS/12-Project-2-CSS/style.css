@@ -10,17 +10,15 @@
 }
 .top-bar {
   width: 100%;
-  background-color: #ff5851;
+  background-color: #ffffff;
   position: fixed;
   left: 0;
   top: 0;
-  /* z-index: 99999; */
+  z-index: 10001;
 }
 .main {
   max-width: 90%;
-  /* background-color: #6a5ca2;  */
   margin: auto;
-  /* height: 200vh; */
 }
 header {
   display: flex;
@@ -28,14 +26,15 @@ header {
   align-items: center;
 }
 .logo a {
-  color: #f8f8f8;
+  color: #ff5851;
+  font-size: 2rem;
 }
 nav ul li {
   display: inline-block;
   margin: 15px 40px 15px 0;
 }
 nav ul li a {
-  color: #f8f8f8;
+  color: #ff5851;
   font-size: 15px;
   font-weight: 400;
 }
@@ -43,81 +42,41 @@ nav ul li :hover {
   color: #baaee6;
   transition: 0.3s;
 }
-.hero {
-  width: 100%;
-  /* height: 230vh; */
-  /* border: 1px solid; */
-}
-.hero-img {
-  background-color: #f8f8f8;
-  height: 100vh;
-  width: 100%;
-  border: 1px solid rgb(0, 0, 0); 
-  /* background-position: 0px -120px; */
-  /* background-attachment: fixed; */
-}
-.main-body {
+.hero{
   max-width: 90%;
-  height: 550px;
+  position: relative;
   margin: auto;
+}
+.img {
+  margin: 58.18px auto;
   display: flex;
-  align-items: center;
-  border: 1px solid red;
-  justify-content: flex-start;
-  margin-top: 58.18px;
+  height: 550px;
+  position: relative;
 }
-.intro {
-  /* border: 1px solid red; */
-  /* height: 90%; */
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: center; */
-  /* align-items: flex-start; */
-  /* padding-left: 150px;
-  margin-top: 58.18px; */
-  /* padding-top: 200px; */
-  /* text-align: center; */
-}
-.intro h2 {
-  font-size: 40px;
-  color: #5e5e64;
- text-align: center;
-}
-.intro h1 {
-  margin-top: -10px;
-  font-size: 60px;
-  color: #464b4f;
-  text-align: center;
-}
-.intro p {
-  font-family: "Nunito", sans-serif;
-  font-weight: 300;
-  font-size: 20px;
-  margin-top: -10px;
-  /* line-clamp: 20px; */
-  letter-spacing: 0.3em;
-}
-.intro button {
-  margin-top: 40px;
-  cursor: pointer;
-  padding: 3px;
-  width: 150px;
+.img .bg1 {
+  width: 50%;
   background-color: #ff5851;
-  color: white;
-  font-size: 15px;
-  border-radius: 20px;
-  border: 2px solid #eee;
-  padding: 8px 0;
 }
-button:hover {
-  transform: scale(1.03);
-  color: #302a45;
-  /* font-size: 14px; */
-  transition: 0.3s;
+.img .bg2 {
+  width: 50%;
+  background-color: #f8f8f8;
 }
-@media (max-width: 900px) {
-  .intro {
-    padding-left: 100px;
+.img .hello{
+  width: 100%;
+  /* border: 1px solid red; */
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 13rem;
+  line-height: .8;
+  letter-spacing: 20px;
+  margin-top: 20px
+}
+@media (max-width: 510px) {
+  .img .hello {
+    font-size: 9rem;
   }
 }
 @media (max-width: 800px) {
