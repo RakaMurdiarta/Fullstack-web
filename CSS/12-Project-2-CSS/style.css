@@ -10,7 +10,7 @@
 }
 .top-bar {
   width: 100%;
-  background-color: #6a5ca2;
+  background-color: #ff5851;
   position: fixed;
   left: 0;
   top: 0;
@@ -28,14 +28,14 @@ header {
   align-items: center;
 }
 .logo a {
-  color: white;
+  color: #f8f8f8;
 }
 nav ul li {
   display: inline-block;
   margin: 15px 40px 15px 0;
 }
 nav ul li a {
-  color: white;
+  color: #f8f8f8;
   font-size: 15px;
   font-weight: 400;
 }
@@ -49,9 +49,10 @@ nav ul li :hover {
   /* border: 1px solid; */
 }
 .hero-img {
-  background-color: #b0a2e9;
-  /* height: 200vh; */
+  background-color: #f8f8f8;
+  height: 100vh;
   width: 100%;
+  border: 1px solid rgb(0, 0, 0); 
   /* background-position: 0px -120px; */
   /* background-attachment: fixed; */
 }
@@ -59,34 +60,40 @@ nav ul li :hover {
   max-width: 90%;
   height: 550px;
   margin: auto;
+  display: flex;
+  align-items: center;
+  border: 1px solid red;
+  justify-content: flex-start;
+  margin-top: 58.18px;
 }
 .intro {
   /* border: 1px solid red; */
-  height: 90%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding-left: 150px;
-  margin-top: 58.18px;
+  /* height: 90%; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: flex-start; */
+  /* padding-left: 150px;
+  margin-top: 58.18px; */
   /* padding-top: 200px; */
   /* text-align: center; */
 }
 .intro h2 {
   font-size: 40px;
   color: #5e5e64;
-  align-items: center;
+ text-align: center;
 }
 .intro h1 {
-  margin-top: -30px;
+  margin-top: -10px;
   font-size: 60px;
   color: #464b4f;
+  text-align: center;
 }
 .intro p {
   font-family: "Nunito", sans-serif;
   font-weight: 300;
   font-size: 20px;
-  margin-top: -15px;
+  margin-top: -10px;
   /* line-clamp: 20px; */
   letter-spacing: 0.3em;
 }
@@ -95,30 +102,29 @@ nav ul li :hover {
   cursor: pointer;
   padding: 3px;
   width: 150px;
-  background-color: #6a5ca2;
+  background-color: #ff5851;
   color: white;
   font-size: 15px;
   border-radius: 20px;
   border: 2px solid #eee;
-  padding: 5px 0px;
-  
+  padding: 8px 0;
 }
 button:hover {
   transform: scale(1.03);
   color: #302a45;
   /* font-size: 14px; */
-  transition: .3s;
+  transition: 0.3s;
 }
-@media(max-width:900px){
-    .intro{
-        padding-left: 100px;
-    }
+@media (max-width: 900px) {
+  .intro {
+    padding-left: 100px;
+  }
 }
-@media(max-width:800px){
-    .intro{
-        padding-left: 60px;
-    }
+@media (max-width: 800px) {
+  .intro {
+    padding-left: 60px;
+  }
 }
-.tiitle h2{
-    text-align: center;
+.tiitle h2 {
+  text-align: center;
 }
