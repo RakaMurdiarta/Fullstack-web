@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ddd;
+  line-height: 1.65;
+}
+/* latihan1 */
+.container-satu {
+  width: 800px;
+  display: flex;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 20px;
+  margin: 50px auto;
+}
+.kolom-utama {
+  flex: 3;
+  order: 2;
+}
+.sidebar-satu {
+  flex: 1;
+  order: 1;
+}
+.sidebar-dua {
+  flex: 1;
+  order: 3;
+}
+.x {
+  padding-right: 10px;
+}
+.kolom-utama p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+/* latihan2 */
+.container-dua {
+  max-width: 800px;
+  /* display: flex; */
+  box-sizing: border-box;
+  /* padding: 20px; */
+  margin: 50px auto;
+  /* justify-content: space-between; */
+}
+.layanan {
+  /* width: 30%; */
+
+  margin-bottom: 20px;
+}
+.layanan.satu {
+  background-color: blue;
+}
+.layanan.dua {
+  background-color: orangered;
+}
+.layanan.tiga {
+  background-color: limegreen;
+}
+/* latihan 3 */
+.container-tiga {
+  max-width: 800px;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.thumbnail {
+  /* border: 1px solid red; */
+  width: 50%;
+  /* box-sizing: border-box; */
+}
+.thumbnail img {
+  width: 100%;
+  /* box-sizing: border-box; */
+}
+
+/* latihan4 */
+.container-4 {
+  max-width: 800px;
+  margin: 50px auto;
+  display: flex;
+}
+.card {
+  overflow: hidden;
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  background-color: #eee;
+  margin: 10px;
+  flex: 1;
+  
+}
+
+.card .header {
+  height: 150px;
+  background-color: brown;
+}
+.card .content {
+  text-align: center;
+  padding-bottom: 10px;
+}
+.card.besar{
+    transform: scale(1.12);
+}
+/* latihan 5 */
+.container-5{
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    margin: 50px auto;
+    display: flex;
+    /* text-align: center; */
+}
+.kotak{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    display: flex;
+    text-align: center;
+    margin: auto;
+}
+.kotak span{
+    margin: auto;
+    text-align: center;
+}
+/* Responsive */
+/* ketika layar diatas 600px */
+@media (min-width: 600px) {
+  .container-dua {
+    display: flex;
+    justify-content: space-between;
+  }
+  .layanan {
+    width: 30%;
+    padding: 10px;
+  }
+  .thumbnail {
+    width: 25%;
+  }
+}

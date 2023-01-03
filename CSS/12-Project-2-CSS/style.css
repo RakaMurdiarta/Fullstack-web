@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Baloo+Paaji|Open+Sans:300,300i,400,400i,600,600i,700,700i");
+* {
+  font-family: "Baloo Paaji", cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+.top-bar {
+  width: 100%;
+  background-color: #6a5ca2;
+  position: fixed;
+  left: 0;
+  top: 0;
+  /* z-index: 99999; */
+}
+.main {
+  max-width: 90%;
+  /* background-color: #6a5ca2;  */
+  margin: auto;
+  /* height: 200vh; */
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo a {
+  color: white;
+}
+nav ul li {
+  display: inline-block;
+  margin: 15px 40px 15px 0;
+}
+nav ul li a {
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+}
+nav ul li :hover {
+  color: #baaee6;
+  transition: 0.3s;
+}
+.hero {
+  width: 100%;
+  /* height: 230vh; */
+  /* border: 1px solid; */
+}
+.hero-img {
+  background-color: #b0a2e9;
+  /* height: 200vh; */
+  width: 100%;
+  /* background-position: 0px -120px; */
+  /* background-attachment: fixed; */
+}
+.main-body {
+  max-width: 90%;
+  height: 550px;
+  margin: auto;
+}
+.intro {
+  /* border: 1px solid red; */
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 150px;
+  margin-top: 58.18px;
+  /* padding-top: 200px; */
+  /* text-align: center; */
+}
+.intro h2 {
+  font-size: 40px;
+  color: #5e5e64;
+  align-items: center;
+}
+.intro h1 {
+  margin-top: -30px;
+  font-size: 60px;
+  color: #464b4f;
+}
+.intro p {
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  margin-top: -15px;
+  /* line-clamp: 20px; */
+  letter-spacing: 0.3em;
+}
+.intro button {
+  margin-top: 40px;
+  cursor: pointer;
+  padding: 3px;
+  width: 150px;
+  background-color: #6a5ca2;
+  color: white;
+  font-size: 15px;
+  border-radius: 20px;
+  border: 2px solid #eee;
+  padding: 5px 0px;
+  
+}
+button:hover {
+  transform: scale(1.03);
+  color: #302a45;
+  /* font-size: 14px; */
+  transition: .3s;
+}
+@media(max-width:900px){
+    .intro{
+        padding-left: 100px;
+    }
+}
+@media(max-width:800px){
+    .intro{
+        padding-left: 60px;
+    }
+}
+.tiitle h2{
+    text-align: center;
+}
