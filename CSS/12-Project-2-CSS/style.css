@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Poppins:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Baloo+Paaji|Open+Sans:300,300i,400,400i,600,600i,700,700i");
+
+
 * {
   font-family: "Baloo Paaji", cursive;
   margin: 0;
@@ -8,6 +10,7 @@
   list-style: none;
   text-decoration: none;
 }
+/* navbar */
 .top-bar {
   width: 100%;
   background-color: #ffffff;
@@ -19,6 +22,7 @@
 .main {
   max-width: 90%;
   margin: auto;
+  /* height: 100%; */
 }
 header {
   display: flex;
@@ -29,29 +33,33 @@ header {
   color: #ff5851;
   font-size: 2rem;
 }
+
 nav ul li {
   display: inline-block;
   margin: 15px 40px 15px 0;
 }
 nav ul li a {
-  color: #ff5851;
-  font-size: 15px;
-  font-weight: 400;
+  color: #000000;
+  font-size: 18px;
 }
 nav ul li :hover {
-  color: #baaee6;
+  color: #ff5851;
   transition: 0.3s;
 }
-.hero{
+/* akhir navbar */
+
+/* hero */
+.hero {
   max-width: 90%;
-  position: relative;
+  /* position: relative; */
   margin: auto;
 }
 .img {
+  width: 100%;
   margin: 58.18px auto;
   display: flex;
-  height: 550px;
-  position: relative;
+  /* position: relative; */
+  height: 800px;
 }
 .img .bg1 {
   width: 50%;
@@ -61,29 +69,290 @@ nav ul li :hover {
   width: 50%;
   background-color: #f8f8f8;
 }
-.img .hello{
+.img .hello {
   width: 100%;
-  /* border: 1px solid red; */
   position: absolute;
   text-align: center;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  font-size: 13rem;
-  line-height: .8;
+  font-size: 15rem;
+  line-height: 0.8;
   letter-spacing: 20px;
-  margin-top: 20px
+  margin-top: 20px;
 }
-@media (max-width: 510px) {
-  .img .hello {
-    font-size: 9rem;
-  }
+/* akhir hero  */
+
+
+/* about  */
+.title {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
 }
+.title h2 {
+  font-weight: 700;
+  font-size: 2.5em;
+}
+.line {
+  width: 20%;
+  margin: auto;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: #ff5851;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 70px auto;
+}
+.card {
+  flex: 1;
+  margin: 20px 40px;
+  width: 100%;
+}
+.img-profile {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.img-profile img {
+  width: 80%;
+  max-width: 500px;
+  min-width: 330px;
+}
+
+.card .text {
+  width: 100%;
+  text-align: left;
+  max-width: 540px;
+  min-width: 400px;
+}
+.card .text h1 {
+  font-size: 40px;
+  padding: 10px 0;
+  letter-spacing: 3px;
+}
+.card .text p {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  padding-left: 3px;
+}
+.btn {
+  margin-top: 8%;
+  margin-left: 3px;
+}
+.btn button {
+  padding: 10px;
+  width: 200px;
+  font-size: 25px;
+  background-color: #f8f8f8;
+  /* border: none; */
+  border-radius: 30px;
+  border-color: #ff5851;
+  cursor: pointer;
+  border-width: 3px;
+  border-style: solid;
+}
+.btn button:hover {
+  background-color: #ff5851;
+  transition: all 0.3s ease-in-out;
+}
+/* akhhir about  */
+
+/* portfolio  */
+.port-text {
+  text-align: center;
+}
+.port-text h1 {
+  font-size: 2rem;
+  margin-top: 30px;
+  letter-spacing: 2px;
+}
+.container-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10% auto;
+  width: 100%;
+  max-width:1100px;
+  /* min-width: 800px; */
+  /* transform: scale(1.2); */
+}
+.thumbnail {
+  display: flex;
+  width: 33.3%;
+  box-shadow: 2px 3px 3px;
+  border-radius: 10%;
+  max-width: 400px;
+  margin: 0 40px;
+}
+.img-portfolio {
+  width: 100%;
+  height: 100%;
+  border-radius: 10%;
+  cursor: pointer;
+}
+.utama {
+  transform: scale(1.2);
+}
+/* akhir portfolio */
+
+/* contact */
+.container-cta {
+  width: 100%;
+  height: 200px;
+  border: 1px solid #ff5851;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  background-color: #ff5851;
+  border-radius: 20px;
+}
+.container-cta h4 {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.container-cta p {
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-top: 10px;
+}
+.input-email {
+  text-align: center;
+  margin: 30px auto;
+}
+input[type="email"] {
+  width: 400px;
+  padding: 7px 5px;
+  border-radius: 10px;
+  border-style: solid;
+  margin-right: 10px;
+  
+}
+input[type="button"] {
+  width: 120px;
+  padding: 2px 5px;
+  border-radius: 10px;
+  border-style: solid;
+  font-size: 17px;
+  /* height: 41.32px; */
+  border-color: #f8f8f8;
+  background-color: #0a19b8;
+  color: #f8f8f8;
+  cursor: pointer;
+}
+input[type="button"]:hover{
+  transform: scale(1.1);
+
+}
+/* akhir contact */
+
+/* footer */
+
+
+.container-footer{
+  width: 100%;
+  background-color: #f8f8f8;
+}
+.footer-text{
+  display: flex;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer-text h2{
+font-size: 120%;
+color: #888787;
+letter-spacing: 2px;
+}
+/* akhir footer */
+
+/* responsive */
+
 @media (max-width: 800px) {
   .intro {
     padding-left: 60px;
   }
+  nav ul {
+    display: none;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .img-profile {
+    justify-content: center;
+    /* margin-top: 50%; */
+    width: 100%;
+  }
+  .card .text {
+    text-align: center;
+    min-width: 100%;
+    /* max-width: 0px; */
+  }
+  .card .text p {
+    line-height: 2;
+    text-align: center;
+  }
+  .line {
+    width: 50%;
+  }
+  .card {
+    margin: 30px 0;
+  }
+  .container-img {
+    flex-direction: column;
+    margin-top: 70px;
+    height: 100%;
+    width: 100%;
+  }
+  .thumbnail {
+    width: 70%;
+    height: 100%;
+    margin: 30px 0;
+    max-width: 300px;
+  }
+  .thumbnail .img-portfolio {
+    height: 100%;
+  }
+  .utama {
+    transform: scale(1);
+  }
+  .about {
+    /* margin-bottom: 60px; */
+    height: 150vh;
+    /* position: absolute; */
+  }
 }
-.tiitle h2 {
-  text-align: center;
+@media (max-width: 650px) {
+  .img .hello {
+    font-size: 11rem;
+  }
+  input[type="email"] {
+    width: 50%;
+  }
+}
+@media (max-width: 450px) {
+  .img .hello {
+    font-size: 8rem;
+  }
+}
+@media (max-width: 410px) {
+  .img .hello {
+    font-size: 8rem;
+  }
+  .container-cta h4 {
+    font-size: 1.3rem;
+
+  }
 }
