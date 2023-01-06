@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/f73a4e0bfc.js" crossorigin="anonymous"></script>
     <title>Portfolio</title>
   </head>
   <body>
@@ -20,11 +21,20 @@
             </h2>
           </div>
           <nav>
-            <ul>
+            <ul class="nav-ul">
               <li><a href="#Home">Home</a></li>
-              <li><a href="#About">About me</a></li>
-              <li><a href="#Portfolio">Portfolio</a></li>
-              <li><a href="#Contact">Contact</a></li>
+              <li><a href="#About">About</a></li>
+              <li class="list-drop"><a href="#Portfolio">Portfolio</a></li>
+              <li class="list-drop"><a class="wrapper" href="#Contact">Contact</a>
+                <div class="dropdown">
+                  <ul class="menu-d">
+                    <span class="sub" href="">sub1</span>
+                    <span class="sub" href="">sub1</span>
+                    <span class="sub" href="">sub1</span>
+                  </ul>
+                </div>
+              </li>
+              <span class="menu-drop"><i class="fa-solid fa-bars"></i></span>
             </ul>
           </nav>
         </header>
@@ -47,7 +57,7 @@
     <!-- about me -->
     <section class="about">
       <div class="main">
-        <div class="title"><h2>About Me</h2></div>
+        <div class="title"><h2>About</h2></div>
         <div class="line"></div>
         <div class="container">
           <div class="card">
@@ -80,6 +90,13 @@
                 I'm Fullstack Web Development, and I'm very passionate and
                 dedicated to my work
               </p>
+              <div class="social">
+                <ul>
+                  <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                  <li><a href=""><i class="fa-brands fa-instagram"></i></a></i></li>
+                  <li><a href=""><i class="fa-brands fa-github"></i></a></i></li>
+                </ul>
+              </div>
               <div class="btn">
                 <a href="https://github.com/RakaMurdiarta" target="_blank"
                   ><button>Download CV</button></a
