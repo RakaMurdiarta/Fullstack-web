@@ -1,0 +1,149 @@
+*{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* navbar */
+.badge-notify {
+  background: red;
+  position: relative;
+  top: -20px;
+  left: -20px;
+}
+
+.navbar {
+  /* height: 60px; */
+  background: #f5f5f5;
+}
+
+.custom-icons {
+  display: flex;
+  flex-direction: row;
+}
+
+.customsize {
+  margin-top: -10px;
+  margin-right: -8px;
+}
+
+.custom-dropdown-box {
+  width: 250px;
+  max-width: 250px;
+  position: absolute !important;
+  margin-top: 18px !important;
+}
+
+.dropdown-item {
+  width: 100% !important;
+}
+/* navbar-end */
+/* sidebar */
+.sidebar{
+  position: fixed;
+  background: #293042;
+  /* margin-top: 50px; */
+  padding-top: 30px;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  transition: .5s;
+  transition-property:left;
+  overflow:scroll;
+}
+.sidebar a{
+  color: white;
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  line-height: 60px;
+  padding-left: 40px;
+  box-sizing: border-box;
+  transition: .5s;
+  transition-property: background;
+}
+.sidebar a:hover{
+  background: #19b3d3;
+  color: white;
+  font-weight: bolder;
+}
+.sidebar i{
+  padding-right: 10px;
+}
+#check:checked ~ .sidebar label i{
+  z-index: 1;
+  color: white;
+  /* height: 100%; */
+  position: fixed;
+  cursor: pointer;
+  left: 20px;
+  margin: 5px 0;
+  transition: .5s ease-in;
+  transition-property: color;
+}
+#check{
+  display: none;
+}
+.sidebar label #btn, label #cancel{
+  position: absolute;
+  cursor: pointer;
+  background: #293042;
+  border-radius: 3px;
+}
+.sidebar label #btn{
+  left: -205px;
+  top: 30px;
+  font-size: 30px;
+  color: white;
+}
+#check:checked ~ .sidebar label #cancel{
+  display: none;
+}
+#check:checked ~ .sidebar {
+  left:0;
+}
+#check:checked ~label #btn{
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+#check:checked ~ .sidebar{
+  left: -170px;
+}
+#check:checked ~ .sidebar a span{
+  display: none;
+}
+#check:checked ~ .sidebar a{
+ font-size: 20px;
+ margin-left: 149px;
+ width: 80px;
+}
+#check:checked ~ .sidebar label #btn{
+  left: 18px;
+  top: 85px;
+  font-size: 30px;
+  color: white;
+}
+.sidebar label #cancel{
+  left: 210px;
+  top: 20px;
+  font-size: 30px;
+  color: white;
+}
+/* sidebar-end */
+/* main-section */
+.content{
+  margin-left: 250px;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  transition: .5s;
+  /* padding-top: 40px; */
+  color: white;
+  font-weight: bold;
+}
+#check:checked ~ .content{
+  margin-left: 80px;
+}
+/* end-section */
+
+
+
+
