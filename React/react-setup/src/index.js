@@ -1,6 +1,6 @@
 // import React from 'react'
 import ReactDOM from 'react-dom/client';
-import Logo from './Components/Logo/logo';
+import Image from './Components/Logo/Lgog';
 import "./index.css"
 import Button from "./Components/Button/button"
 import Text from './Components/Text/text';
@@ -13,10 +13,9 @@ root.render(
     <div>
         <div className='container'>
             <div className='wrapper'>
-                <Logo/>
+                <Image/>
                 <Button/>
             </div>
-            
         </div>
         <Text></Text>
     </div>

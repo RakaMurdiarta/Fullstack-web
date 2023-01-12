@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="demo"></div>
+    <div id="Hitung"></div>
+    <script>
+      //number 1
+      const cityName = "Denpasar";
+      let angka1 = 200;
+      let angka2 = 800;
+
+      //number 2
+      console.log(cityName);
+      document.getElementById("demo").innerHTML =
+        "Kota Saya adalah " + cityName;
+      function Sum(angka1, angka2) {
+        return angka1 + angka2;
+      }
+      const hasil = Sum(angka1, angka2);
+      document.write(angka1 + " + " + angka2 + " Total : ", hasil);
+      console.log(angka1 + " + " + angka2 + " Total : ", hasil);
+
+      //number 3
+      function clone(name) {
+         return name.repeat(3)
+      }
+      const kclone=clone(String("Doni "))
+      console.log(kclone)
+      document.getElementById('Hitung').innerHTML=kclone
+
+      const carItem={
+            itemID:1,itemName:'Shoes Nike',itemPrice:"$56",itemQuantity:2,cartID:201
+      }
+    </script>
+  </body>
+</html>
