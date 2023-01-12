@@ -10,17 +10,24 @@ class State extends Component {
     }
     tambah() {
         this.setState({
-            counter:this.state.counter +1,
+            counter: this.state.counter + 1,
         });
     }
-    kurang(){
-        
+    kurang() {
+
         this.setState({
-            counter:this.state.counter-1,
-            
+            counter: this.state.counter - 1,
+
         })
+        if (this.state.counter <= 0) {
+            this.setState({
+                counter: 0,
+
+            })
+        }
     }
-    
+
+
     render() {
         return (
             <div>
@@ -30,7 +37,7 @@ class State extends Component {
             </div>
 
         )
- 
+
     }
 }
 

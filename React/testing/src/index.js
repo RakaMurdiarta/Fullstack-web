@@ -21,6 +21,6 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
 //   <Propsinclass message='Ini Props dari Class'/>
 // )
-// root.render(
-//   <State/>
-// )
+root.render(
+  <State/>
+)
