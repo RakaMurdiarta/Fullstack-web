@@ -41,8 +41,8 @@ function App() {
     for (let n in list) {
       console.log(list[n] + ` : ` + carItem[list[n]] + " \n")
       ger += list[n] + ` : ` + carItem[list[n]] + " \n"
-      document.querySelector("h2#click").innerText = ger
     }
+    document.querySelector("h2#click").innerText = ger
     return ger
   }
 
@@ -94,6 +94,19 @@ function App() {
     console.log(k, " : ", student[k])
   }
 
+  const Hello7 = () => {
+    let myvar = 12343555
+    return (
+      <div>
+        <p>My Hello 7 : {myvar}</p>
+      </div>
+    )
+  }
+
+  const bigger10 = (item)=>{
+    return item>10;
+} 
+
   return (
     <div className="App">
       <h1>Saya Berasal dari {cityName}</h1>
@@ -104,6 +117,7 @@ function App() {
       <h1>{line}</h1>
       <h1>{line1}</h1>
       <h1>{line2}</h1>
+      <Hello7/>
     </div>
   );
 }

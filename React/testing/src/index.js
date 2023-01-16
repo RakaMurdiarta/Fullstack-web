@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import Profile from './components/PropsInFunctional';
 import Propsinclass from "./components/PropsInClass";
 import State from './components/newState';
-
+import Tampil from './latihan hide and show';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -22,5 +22,5 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 //   <Propsinclass message='Ini Props dari Class'/>
 // )
 root.render(
-  <State/>
+  <Tampil />
 )
