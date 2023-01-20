@@ -1,7 +1,9 @@
 // import logo from './logo.svg';
 import './App.css';
-import Card from './components/Card/Card';
+import Card from './components/Card/Card'
 import profile from './image/profile.jpeg'
+// import 'bootstrap/dist/css/bootstrap.min.css'
+
 
 // import InputWithLable from './components/InputWithLable/InputWithLabel';
 // import Header from './components/Header/Header';
@@ -12,7 +14,7 @@ import profile from './image/profile.jpeg'
 function App() {
   return (
     <>
-      <Card href="#" gambar={profile} width='150px' title="Raka Murdiarta" comment="Saya Belajar React di Koding Akademi" nickname="Raka"/> 
+      <Card  href="#" gambar={profile} width='150px' title="Raka Murdiarta" comment="Saya Belajar React di Koding Akademi" nickname="Raka" />
     </>
 
     // <div className="App">

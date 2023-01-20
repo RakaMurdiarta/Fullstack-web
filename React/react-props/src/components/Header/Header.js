@@ -1,16 +1,17 @@
 import Title from "./Title";
 import Description from "./Description";
-import UserPofile from "./UserProfile";
 
 function Header() {
     return (
-        <header>
-            <Title appTitle='Koding Akademi' />
-            <Description desc='Pusat Belajar Koding dan Robotic' />
-            <Description desc='Tecnology' />
-            <UserPofile />
-        </header>
-
+        <>
+            <header>
+                <Title appTitle='Koding Akademi' />
+                <Description>
+                    <h3>Description</h3>
+                    <p>Technology</p>
+                </Description>
+            </header>
+        </>
     );
 }
 

@@ -2,6 +2,7 @@ import React from 'react';
 import "./Card.css";
 import TimeAgo from 'javascript-time-ago'
 import en from 'javascript-time-ago/locale/en'
+// import 'bootstrap/dist/css/bootstrap.min.css'
 // TimeAgo.addDefaultLocale(en)
 TimeAgo.addLocale(en)
 
@@ -18,13 +19,13 @@ const time=timeAgo.format(Date.now() - 2*1000, 'round')
 
 const Card = ({ gambar, title, comment, href, width, nickname }) => {
     return (
-        <div className="wrapper">
+        <div className="wrapper mb-4">
             <img src={gambar} alt="" width={width} />
             <div className="card-text">
                 <div className='title-wrap'>
-                    <h3 className='title'>{title}</h3>
+                    <h5 className='title'>{title}</h5>
                     <span style={{margin:"0 5px"}}>-</span>
-                    <h3 className='nick'>{nickname}</h3>
+                    <h5 className='nick'>{nickname}</h5>
                 </div>
                 <p className='comment'><strong>{comment}</strong></p>
                 <div className='expression'>
