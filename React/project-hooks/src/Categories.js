@@ -25,7 +25,7 @@ const Categories = ({ categories, filterItems, active, Price, filterPrice }) => 
               <button type="button"
                 className={active === price ? 'filter-btn-active' : 'filter-btn'}
                 key={index}
-                onClick={() => filterPrice(price)}//mengirim value sebagi arguments
+                onClick={()=>filterPrice(price)}//mengirim value sebagi arguments
               >
                 {price}
               </button>
