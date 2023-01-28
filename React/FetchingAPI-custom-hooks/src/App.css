@@ -1,0 +1,14 @@
+.container{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  gap: 10px;
+}
+.box{
+  border: 3px solid black;
+  background-color: blue;
+  padding: 10px;
+}
+.box img{
+  width: 200px;
+  height: 200px;
+}
