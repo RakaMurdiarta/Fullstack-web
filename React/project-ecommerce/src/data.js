@@ -1,0 +1,77 @@
+const products = [
+    {
+        id: 1,
+        title: 'Ayam Goreng',
+        category: 'Makanan',
+        price: 15000,
+        img: 'https://images.unsplash.com/photo-1586793783658-261cddf883ef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGZyaWVkJTIwY2hpY2tlbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60',
+        desc: `Model Topi : Topi Kodok / Flat Cap Hat Bahan : Kaos Spandek, Pengait : Besi, Ukuran : 58cm - 65cm`,
+    },
+    {
+        id: 2,
+        title: 'Nasi Goreng',
+        category: 'Makanan',
+        price: 10000,
+        img: 'https://cdn.pixabay.com/photo/2017/07/16/11/57/fried-2509089_960_720.jpg',
+        desc: `Kaos Polos bahan 100% Cotton Combed 30s Reaktif, bahan langsung terasa adem begitu dipakai dan ga panas lebih tipis dibanding 20s/24s. Cocok digunakan di iklim tropis seperti Indonesia. `,
+    },
+    {
+        id: 3,
+        title: 'Bebek Goreng',
+        category: 'Makanan',
+        price: 18000,
+        img: 'https://cdn.pixabay.com/photo/2016/10/03/19/41/roasted-duck-1712626_960_720.jpg',
+        desc: `✔️ PRODUKSI SENDIRI, LANGSUNG DARI PABRIK ✔️ Kualitas BAHAN : 100% Cotton Combed Tidak ada Campuran Bahan PE -> DIJAMIN Tebal, Halus, dan Gak bikin gerah ✔️ KAOS UNISEX (BISA PRIA DAN WANITA)`,
+    },
+    {
+        id: 4,
+        title: 'Sate Lilit',
+        category: 'Makanan',
+        price: 20000,
+        img: 'https://akcdn.detik.net.id/community/media/visual/2020/09/17/sate-lilit-ayam-khas-bali.jpeg?w=3864',
+        desc: `Coconut island saat ini menjadi produk lokal terbaik dengan kualitas tinggi , Kaos pria motif polos dengan detail logo yang dibordir terbuat dari bahan katun yang lembut dan nyaman digunakansehari - hari  `,
+    },
+    {
+        id: 5,
+        title: 'Jus Alpukat',
+        category: 'Minuman',
+        price: 20000,
+        img: 'https://images.unsplash.com/photo-1604085792782-8d92f276d7d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YXZvY2FkbyUyMGp1aWNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
+        desc: `Polo Shirt kami memiliki 6 warna varian - Black - Taupe - Milo - Golden Brown `,
+    },
+    {
+        id: 6,
+        title: 'Es Teh',
+        category: 'Minuman',
+        price: 8000,
+        img: 'https://cdn.pixabay.com/photo/2020/02/17/19/10/tea-4857512__340.jpg',
+        desc: `JAKET PRIA FORMAL/JAS JAKET PRIA CASUAL BAHAN : american drill Warna : MAROON ,HITAM, NAVY SIZE : S, M, L, XL ,XXL`,
+    },
+    {
+        id: 7,
+        title: 'Es Jeruk',
+        category: 'Minuman',
+        price: 10000,
+        img: 'https://cdn.pixabay.com/photo/2016/08/23/15/52/fresh-orange-juice-1614822_960_720.jpg',
+        desc: `BEST SELLER JAS PRIA /BLAZER With JACKET PRIA/ JAS BLAZER FORMAL & SEMI FORMAL SANGAT COCOK DIPAKAI UNTUK ACARA FORMAL `,
+    },
+    {
+        id: 8,
+        title: 'Es Kelapa',
+        category: 'Minuman',
+        price: 12000,
+        img: 'https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2022/08/24033527/Berapa-Kalori-yang-Terdapat-dalam-Es-Kelapa_.jpg',
+        desc: `BEST SELLER JAS PRIA /BLAZER With JACKET PRIA/ JAS BLAZER FORMAL & SEMI FORMAL  `,
+    },
+    {
+        id: 9,
+        title: 'Jus Stroberi',
+        category: 'Minuman',
+        price: 15000,
+        img: 'https://cdn.pixabay.com/photo/2017/03/31/16/07/smoothie-2191709_960_720.jpg',
+        desc: `Terbuat dari material 100% Breathable Poly Bamboo yang lembut & halus sehingga nyaman dipakai untuk beristirahat & moment santai saat dirumah.`,
+    },
+];
+
+
+export default products;

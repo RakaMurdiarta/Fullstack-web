@@ -1,0 +1,21 @@
+  
+img {
+    height: 175px;
+}
+
+.products-container {
+    display: grid;
+    gap: 2rem 1.5rem;
+}
+
+@media (min-width: 992px) {
+    .products-container {
+       
+    }
+}
+    
+@media (min-width: 1170px) {
+    .products-container {
+        
+    }
+}

@@ -1,0 +1,109 @@
+.logo {
+  border-radius: 50%;
+}
+.fa-shopping-cart {
+  font-size: 32px;
+  color: rgb(231, 224, 224);
+}
+
+.cart {
+  position: relative;
+}
+.badge {
+  position: absolute;
+  top: -12px;
+  left:  20px;
+  font-size: 12px !important;
+  z-index: 1001;
+}
+
+/* Product Css */
+.card1 {
+  position: relative;
+  width: 400px;
+  height: 480px;
+  background: #191919;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card1:hover::before {
+  top: -70%;
+  transform: skewY(390deg);
+}
+.card1 .imgBox {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  z-index: 1;
+}
+
+.card1 .contentBox {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.card1 .contentBox h3 {
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.card1 .contentBox .price {
+  font-size: 24px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.card1 .contentBox .buy {
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  padding: 10px 30px;
+  margin-top: 15px;
+  text-decoration: none;
+  background: #ffce00;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.5s;
+  border: none;
+  font-size: 18px;
+}
+
+.card1:hover .contentBox .buy {
+  top: 0;
+  opacity: 1;
+}
+
+.mouse {
+  height: 300px;
+  width: 90%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* Category*/
+.filter{
+  background: transparent;
+  font-weight: 700;
+  font-size: 23px;
+  border: none;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.filter:hover{
+  color: #ffce00;
+  transition: .6s;
+}
