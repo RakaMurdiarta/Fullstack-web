@@ -1,0 +1,18 @@
+.section-hero{
+    background: #e2d5e2;
+    width: 100%;
+    display: flex;
+    align-items: center;  
+}
+
+  
+.section-hero a {
+
+    color: var(--clr-primary-3);
+    padding: 0.5rem;
+    transition: var(--transition);
+}
+
+.section-hero a:hover {
+    color: var(--clr-primary-1);
+}
