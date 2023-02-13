@@ -59,6 +59,6 @@ p {
 }
 @media (min-width: 1280px) {
     .section-center {
-        transform: translateY(5rem);
+        /* transform: translateY(5rem); */
     }
 }

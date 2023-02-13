@@ -29,15 +29,11 @@ const FeaturedProducts = () => {
             ) : (
                 <>
                     <div className='section-featured'>
-                        <h1>Product Pilihan</h1>
+                        <h1 className='text-center font-bold text-[30px]'>Product Pilihan</h1>
                         <div className='featured'>
                             {featured.map((item) => {
                                 return (
-                                    <div>
-                                        <img src={item.image} alt={item.name} />
-                                        <div>{item.name}</div>
-                                        <div>{item.price}</div>
-                                    </div>
+                                    <Product name={item.name} image={item.image} price={item.price} id={item.id}/>
                                 )
                             })}
                         </div>

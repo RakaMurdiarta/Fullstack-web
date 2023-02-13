@@ -10,7 +10,7 @@ const ListView = ({ products }) => {
             {products.map((set) => (
                 <article key={set.id} className='isi-content gap-6'>
                     <img
-                        className='h-[200px] w-[300px] block object-cover mb-[1rem] cursor-pointer'
+                        className='h-[200px] w-[300px] block object-cover mb-[1rem]'
                         src={set.image}
                         alt={set.name}
                     />
@@ -24,12 +24,12 @@ const ListView = ({ products }) => {
                             </h4>
                         </div>
                         <p>{set.description}</p>
-                        <a
-                            href='/'
+                        <Link
+                            to={`/products/${set.id}`}
                             className='inline-block w-20 text-center cursor-pointer bg-slate-600 text-white p-2 rounded-lg hover:bg-[#AB7A5F] transition-all duration-300'
                         >
                             Details
-                        </a>
+                        </Link>
                     </div>
                 </article>
             ))}
