@@ -6,9 +6,14 @@ import CartItem from './CartItem'
 import CartTotals from './CartTotals'
 const CartItems = () => {
   const { cart, clearCart } = useCartContext()
+  console.log('dad',cart);
+  const {id,name,image,price,amount}=cart
 
   return (
-    <div></div>
+    <div>
+      <CartColumns />
+      <CartItem id={cart.id} />
+    </div>
   )
 }
 
