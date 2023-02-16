@@ -1,8 +1,0 @@
-.checkout {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.checkout .empty {
-    text-align: center;
-}
