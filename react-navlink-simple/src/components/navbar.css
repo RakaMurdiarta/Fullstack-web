@@ -1,0 +1,12 @@
+.none {
+  text-decoration: none;
+}
+
+.active {
+  color: rgb(255, 255, 255);
+  background-color: blue;
+  padding: 1rem;
+}
+.selected {
+  background-color: beige;
+}

@@ -9,8 +9,9 @@ import { useUserContext } from '../context/user_context'
 import './navbar.css'
 import { FaShoppingCart } from 'react-icons/fa'
 const Nav = () => {
-    const { openSidebar } = useProductsContext()
+    const { openSidebar, products } = useProductsContext()
     const { myUser } = useUserContext()
+    console.log({ products })
     return (
         <div className='nav'>
             <div className='nav-center'>
@@ -18,6 +19,11 @@ const Nav = () => {
                     <a href='/'>
                         <img src={logo} alt='cek-toko-sebelah' />
                     </a>
+                    <button onClick={openSidebar} className='nav-toggle'>
+                        <div className='text-[20px]'>
+                            <FaBars />
+                        </div>
+                    </button>
                 </div>
                 <ul className='nav-links'>
                     {links.map((set) => (
@@ -26,12 +32,8 @@ const Nav = () => {
                         </li>
                     ))}
                 </ul>
-                <div className='cart-btn-wrapper gap-2'>
-                    <Link className={`cart-btn`} to='/cart'>
-                        Cart
-                        <FaShoppingCart className='inline mx-2' />
-                    </Link>
-                    <a>Login</a>
+                <div className='show'>
+                    <CartButtons />
                 </div>
             </div>
         </div>

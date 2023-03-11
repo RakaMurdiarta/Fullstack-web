@@ -7,8 +7,8 @@ import {
 } from '../actions'
 
 const cart_reducer = (state, action) => {
-  if (action.type === ADD_TO_CART) {
-      const { id, color, product, amount } = action.payload
+    if (action.type === ADD_TO_CART) {
+        const { id, color, product, amount } = action.payload
         const tempItem = state.cart.find((i) => i.id === id + color)
         if (tempItem) {
             const tempCart = state.cart.map((cartItem) => {
@@ -28,7 +28,7 @@ const cart_reducer = (state, action) => {
                 id: id + color,
                 color: color,
                 image: product.image,
-                max: product.max,
+                max: product.stock,
                 price: product.price,
                 name: product.name,
                 amount: amount,
@@ -38,12 +38,16 @@ const cart_reducer = (state, action) => {
         }
     }
     if (action.type === REMOVE_CART_ITEM) {
-        
-        const itemBaru = state.cart.filter((item) => item.id !== action.payload.id)
+        console.log(`ee`, action.payload)
+        const itemBaru = state.cart.filter((set) => {
+            const { id } = set
+            return id !== action.payload.id
+        })
         return { ...state, cart: itemBaru }
     }
     if (action.type === TOGGLE_CART_ITEM_AMOUNT) {
         const { id, value } = action.payload
+        console.log({ state: state })
         const tempCart = state.cart.map((item) => {
             if (item.id === id) {
                 if (value === 'inc') {

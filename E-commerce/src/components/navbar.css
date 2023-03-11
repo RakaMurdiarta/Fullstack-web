@@ -1,77 +1,83 @@
 .nav {
-  height: 5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-center {
-  width: 90vw;
-  margin: 0 auto;
-  max-width: var(--max-width);
+    width: 90vw;
+    margin: 0 auto;
+    max-width: var(--max-width);
 }
 
 .nav-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .nav-header img {
-  width: 175px;
-  margin-left: -15px;
+    width: 175px;
+    margin-left: -15px;
 }
 
 .nav-toggle {
-  background: transparent;
-  border: transparent;
-  color: var(--clr-primary-5);
-  cursor: pointer;
+    background: transparent;
+    border: transparent;
+    color: var(--clr-primary-5);
+    cursor: pointer;
 }
 
 .nav-toggle svg {
-  font-size: 2rem;
+    font-size: 2rem;
 }
 
 .nav-links {
-  display: none;
+    display: none;
 }
 
 .cart-btn-wrapper {
-  display: none;
+    display: none;
+}
+.show {
+    display: none;
 }
 
 @media (min-width: 992px) {
-  .nav-toggle {
-    display: none;
-  }
-  .nav-center {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    align-items: center;
-  }
-  .nav-links {
-    display: flex;
-    justify-content: center;
-  }
+    .nav-toggle {
+        display: none;
+    }
+    .nav-center {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+    }
+    .nav-links {
+        display: flex;
+        justify-content: center;
+    }
+    .show {
+        display: block;
+    }
 
-  .nav-links li {
-    margin: 0 0.5rem;
-  }
+    .nav-links li {
+        margin: 0 0.5rem;
+    }
 
-  .nav-links a {
-    color: var(--clr-grey-3);
-    font-size: 1rem;
-    text-transform: capitalize;
-    letter-spacing: var(--spacing);
-    padding: 0.5rem;
-  }
+    .nav-links a {
+        color: var(--clr-grey-3);
+        font-size: 1rem;
+        text-transform: capitalize;
+        letter-spacing: var(--spacing);
+        padding: 0.5rem;
+    }
 
-  .nav-links a:hover {
-    border-bottom: 5px solid var(--clr-primary-7);
-  }
+    .nav-links a:hover {
+        border-bottom: 5px solid var(--clr-primary-7);
+    }
 
-  .cart-btn-wrapper {
-    display: flex;
-  }
+    .cart-btn-wrapper {
+        display: flex;
+    }
 }
