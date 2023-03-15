@@ -145,24 +145,20 @@ exports.postOrder = (req, res) => {
               })
               .then((data) => {
                 if (data.length > 0) {
-                  data.map((item) => {
-                    {
-                      item.quantity =
-                        parseInt(item.quantity) +
-                        parseInt(product.cartitems.quantity);
-                    }
+                  data.map(({ quantity }) => {
+                    orderItems.update(
+                      {
+                        quantity:
+                          parseInt(quantity) +
+                          parseInt(product.cartitems.quantity),
+                      },
+                      {
+                        where: {
+                          productId: product.cartitems.productId,
+                        },
+                      }
+                    );
                   });
-                  // ord
-                  //   .create(product, {
-                  //     through: {
-                  //       quantity:
-                  //         parseInt(product.cartitems.quantity) +
-                  //         parseInt(product.cartitems.quantity),
-                  //     },
-
-                  //   })
-
-                  res.send(data);
                 } else {
                   order
                     .addProduct(product, {
@@ -171,49 +167,40 @@ exports.postOrder = (req, res) => {
                       },
                     })
                     .then((result) => {
-                      console.log("berhasil add");
+                      res.send("berhasil melakukan Order");
                     });
                 }
               });
           });
-          // res.json({product : product.productId})
-          // products.map((product) => {
-
-          // });
+          res.send("berhasil");
         } else {
-          // res.json({
-          //   msg: "Product Tidak Ditemukan",
-          // });
+          res.json({
+            msg: "Silahkan Tambahkan Product ke dalam Cart",
+          });
         }
-        // res.json({ msg: "success" });
       });
     });
   });
 };
 
 exports.Order = (req, res) => {
-  const orderitems = [];
+  const idOrder = req.body.orderId;
   req.user
     .getOrders({
       where: {
-        id: 1,
+        id: idOrder,
       },
     })
     .then((orders) => {
-      // orders jarena yang dihasilkan dalam bentuk array maka tidak bisa di gunakan magic method
-      // orders[orders.length - 1].getProducts().then((products) => {
-      //   res.json(products)
-
-      //   // products.map((product) => {
-      //   //   orderitems.push(product.orderitem);
-      //   // });
-      //   // res.json({ data: orderitems });
-      // });
-      res.json({ orders });
+      if (orders.length > 0) {
+        orders[0].getProducts().then((data) => {
+          res.json({ data });
+        });
+      } else {
+        res.json({ msg: "Order Id Tidak tersedia" });
+      }
+    })
+    .catch((err) => {
+      res.json({ err });
     });
-  // User.findAll({
-  //   include: {
-  //     model: OrdersItems,
-  //   },
-  // }).then((data) => res.json({ data }));
 };

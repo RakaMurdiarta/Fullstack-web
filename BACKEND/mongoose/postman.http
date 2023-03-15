@@ -1,0 +1,25 @@
+GET http://localhost:8000/admin/getUser
+
+###
+
+POST http://localhost:8000/admin/addUser
+Content-Type: application/json
+
+{
+    "nama" : "harris",
+    "email" : "harris@gmail"
+}
+
+###
+POST http://localhost:8000/admin/addProduct
+Content-Type: application/json
+
+{
+    "title" : "Bajuu",
+    "price" : 25000,
+    "description" : "1",
+    "imageUrl" : "gogle.com"
+}
+
+###
+GET http://localhost:8000/admin
